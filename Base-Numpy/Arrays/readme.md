@@ -1,23 +1,46 @@
-# Arrays no Numpy [...]
+## Métodos array Numpy
+### `arange()`
 
-**O numpy tem uma base de dados numéricos, um objeto array multidimensional, mais conhecido brutamente como uma matriz, bastante poderoso com desempenho muito bom, em que consta com suas próprias funções, métodos, e recursos a serem utilizados da biblioteca!**
+**Esta primeira função em uma array, constrói um array a partir do valor final indicado, e assim ela consegue criar com determinado tamanho!**
 
-## Performance...
-
-Iremos fazer um teste de performance para que seja entendido dentro da biblioteca o tamanho da velocidade a ser tratada com os números que são criados.
-
-- **O teste de performance é basicamente para se entender a velocidade, portante iremos contar a partir de um array de 1 milhão de números, e iremos medir que ele consegue fazer para multtiplicar todos estes números 1 por 1:**
+A partir disso, mesmo assim ainda podemos criar um array comum a partir dos comandos de array dentro do parêntese, como argumentos.
 
 ```python
-py_list = list(range(1000000))
-np_array = np.arange(1000000)
+import numpy as np
 
-print(%time for _ in range(100): np_array *= 2)
-# CPU times: user 65.2 ms, sys: 0 ns, total: 65.2 ms Wall time: 73.7 ms
+array10 = np.arange(10)
+print(array10) # Printa na tela um array com 10 valores preenchidos pela biblioteca
 
-
-print(%time for _ in range(100): py_list = [x * 2 for x in py_list])
-# CPU times: user 8.17 s, sys: 1.79 s, total: 9.96 s Wall time: 9.98 s
+arrayTest = np.array([1, 2, 3, 4, 5])
+print(arrayTest)
 ```
 
-**Aqui temos um tempo muito superior, de aproximadamente 10 segundos. Ou seja, a diferença de desempenho é enorme e representa uma vantagem de se utilizar o Numpy.**
+---
+
+### De tipos: `type()` e `dtype()`
+
+**Essas duas funções de array servem para a tipagem de um array construídos, e como já foi falado, o *Numpy* é conhecido por ser uma biblioteca de alta performance numérica nesta construção, portanto, a diferenciação destas duas funções se dá por meio da complexidade.**
+
+```python
+print(array10.type())
+# Integers / Numbers
+print(array.dtype())
+# Int64
+```
+
+---
+
+### `shape()`
+
+**Esta função é uma que caracteriza o tamanho do array, podendo caracterizar até por meio de matrizes dimensionais, na qual ele mostra tamanho de colunas tanto de linhas!**
+
+```python
+dados = [ 
+    ['Rodas de liga', 'Travas elétricas', 'Piloto automático', 'Bancos de couro', 'Ar condicionado', 'Sensor de estacionamento', 'Sensor crepuscular', 'Sensor de chuva'],
+    ['Central multimídia', 'Teto panorâmico', 'Freios ABS', '4 X 4', 'Painel digital', 'Piloto automático', 'Bancos de couro', 'Câmera de estacionamento'],
+    ['Piloto automático', 'Controle de estabilidade', 'Sensor crepuscular', 'Freios ABS', 'Câmbio automático', 'Bancos de couro', 'Central multimídia', 'Vidros elétricos']
+]
+
+print(dados.shape())
+# 258 / (3, 8)
+```
