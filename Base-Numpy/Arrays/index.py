@@ -24,3 +24,38 @@ dados = [
 
 print(dados.shape())
 # 258 / (3, 8)
+print(dados.size())
+print
+# 5
+
+# -------------------------------------------------------
+
+info_carros = [44410, 5712, 37123, 0, 25757, 2003, 1991, 1990, 2019, 2006]
+np.array(info_carros)
+np.array(info_carros).reshape((2, 5))
+
+print(info_carros)
+# array([[44410, 5712, 37123, 0, 25757], [ 2003, 1991, 1990, 2019, 2006]])
+
+# Digamos agora que queremos alocar mais informações dentro deste array, e assim adicionar mais uma linha:
+dados_new = dados.copy()
+dados_new.resize((3, 5))
+ # E assim geramos uma nova linha, na qual temos os dados usando outro método, copy()
+
+
+ # -----------------------------------------------------------------------------
+
+## Estatísticas de array Numpy
+
+# **Vamos fazer um exercício de cálculo utilizando o array dos dados... Primeiramente vamos chamálos:**
+
+anos = np.loadtxt(fname="carros-anos.txt", dtype=int)
+km = np.loadtxt(fname="carros-km.txt")
+valor = np.loadtxt(fname="carros-valor.txt")
+
+dataset = np.column_stack((anos, km, valor))
+
+np.mean(dataset)
+print(dataset)
+
+# 48489.14648578811
