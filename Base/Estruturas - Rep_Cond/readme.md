@@ -28,6 +28,10 @@ nota_2 = float(input('Digite a 2° nota: '))
 print(f'Média: {(nota_1+nota_2)/2}')
 ```
 
+**Este código é inviável!** E se tivermos mais 50, 100, 10000 alunos para serem coletados? Estaríamos em repetição de código infinito, e assim precisamos entender como funciona a lista de repetição, e como ela ajuda nessa situação.
+
+
+
 ---
 
 ## Estruturas condicionais combinadas:

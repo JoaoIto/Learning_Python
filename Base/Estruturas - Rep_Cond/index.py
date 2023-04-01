@@ -1,14 +1,19 @@
-nota_1 = float(input('Digite a 1° nota: '))
-nota_2 = float(input('Digite a 2° nota: '))
+# Criar array com os nomes dos alunos
+alunos = ["Joao", "Lucas", "Emily", "Enzo"]
 
-print(f'Média: {(nota_1+nota_2)/2}')
+# Criar um array vazio para armazenar as notas
+notas = []
 
-nota_1 = float(input('Digite a 1° nota: '))
-nota_2 = float(input('Digite a 2° nota: '))
+# Perguntar as notas de cada aluno usando um loop for
+for i in range(len(alunos)):
+    nota = float(input(f'Digite a nota de {alunos[i]}: '))
+    notas.append(nota)
 
-print(f'Média: {(nota_1+nota_2)/2}')
+# Calcular a média das notas
+media = sum(notas) / len(notas)
 
-nota_1 = float(input('Digite a 1° nota: '))
-nota_2 = float(input('Digite a 2° nota: '))
-
-print(f'Média: {(nota_1+nota_2)/2}')
+# Verificar se a média é maior que 7 e exibir mensagem correspondente
+if media >= 7:
+    print(f'A média das notas é {media:.2f}. Aprovado.')
+else:
+    print(f'A média das notas é {media:.2f}. Reprovado.')
