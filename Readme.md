@@ -1,6 +1,10 @@
-# Python para Data Science com [Numpy](https://numpy.org/)
+# Python para Data-Science
 
-**Este é um arquivo de estudos de python linguagem e também da biblioteca de performance numérica que é o Numpy, este estudo de dados numéricos para data science está sendo postado por mim mesmo e utilizado tanto para trabalho quanto para meios de próprio estudo.**
+Python é uma linguagem de código aberto, interpretada e de alto nível, sendo uma das linguagens mais utilizadas em projetos de Data Science. Além de sua facilidade de uso e da sintaxe simples, **essa linguagem possui excelentes bibliotecas para lidar com dados, seja nas etapas de obtenção, limpeza e exploração dos dados ou na aplicação de modelos de Machine Learning.**
+
+## Com [Numpy](https://numpy.org/)
+
+**A biblioteca de performance numérica que é o *Numpy*, este estudo de dados numéricos para data science está sendo postado por mim mesmo e utilizado tanto para trabalho quanto para meios de próprio estudo.**
 
 ---
 
