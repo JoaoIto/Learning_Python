@@ -27,3 +27,15 @@ nota_2 = float(input('Digite a 2° nota: '))
 
 print(f'Média: {(nota_1+nota_2)/2}')
 ```
+
+---
+
+## Estruturas condicionais combinadas:
+
+Agora iremos melhoras este código a partir também da lista de repetição, vamos ao código:
+
+- Código:
+
+```py
+
+```
