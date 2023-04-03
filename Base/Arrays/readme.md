@@ -78,3 +78,18 @@ dados
 ```
 
 ---
+
+### Operador de partição `[:]`
+
+Dentro de um array maior, com várias informações de vários tipos, temos ainda um tipo de operação que faz a parte de partição dessas informações de array. Ele consegue indicação a partir dos argumentos de índice, a partição dessas informações **em diferentes arrays novos!**
+
+```py
+# declaração de array de info
+lista_info = ["Joao", "Mly", "Enzo", 10, 9, 8, true, true, false]
+
+# partição em diferentes arrays
+
+lista_nomes = lista_info[0:2]
+lista_notas = lista_info[3:5]
+lista_boolean = lista_info[6:]
+```

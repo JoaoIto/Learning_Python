@@ -35,3 +35,14 @@ print(dados)
 
 # Resultado:[1, 2, 3, 4, 5]
 # Resultado:[1, 2, 3, 4, 5]
+
+# Partição de arrays 
+
+# declaração de array de info
+lista_info = ["Joao", "Mly", "Enzo", 10, 9, 8, true, true, false]
+
+# partição em diferentes arrays
+
+lista_nomes = lista_info[0:2]
+lista_notas = lista_info[3:5]
+lista_boolean = lista_info[6:]
